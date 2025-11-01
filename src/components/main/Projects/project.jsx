@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import './project.css';
+import "./project.css";
+
 const projects = [
   {
     id: 1,
@@ -24,13 +25,13 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="py-5">
+    <section id="projects" className="py-5 section-style">
       <Container>
         <h2 className="text-center mb-4 fw-bold">Projects</h2>
         <Row>
           {projects.map((proj) => (
             <Col md={4} className="mb-4" key={proj.id}>
-              <Card className="h-100 shadow">
+              <Card className="project-card h-100 text-center">
                 <Card.Body>
                   <Card.Title>{proj.title}</Card.Title>
                   <Card.Text>{proj.desc}</Card.Text>
