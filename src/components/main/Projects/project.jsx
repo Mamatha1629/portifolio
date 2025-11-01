@@ -5,21 +5,21 @@ import "./project.css";
 const projects = [
   {
     id: 1,
-    title: "Book Registration System",
-    desc: "A Java + MySQL project using Servlets for managing book records.",
-    link: "https://github.com/yourusername/book-registration",
+    title: "QR Code Generator",
+    desc: "A simple web application built using HTML, CSS, and JavaScript that generates QR codes instantly based on user input, such as text or URLs.",
+    link: "https://github.com/Mamatha1629/QR-Code",
   },
   {
     id: 2,
     title: "To-Do List App",
-    desc: "React app with hooks, dark mode, search, and task filters.",
-    link: "https://github.com/yourusername/todo-app",
+    desc: "A responsive task management application built using HTML, CSS, and JavaScript. It allows users to add, delete, and mark tasks as completed, with features like dark mode, search filter, due dates, and local storage for saving tasks.",
+    link: "https://github.com/Mamatha1629/To-Do-List",
   },
   {
     id: 3,
     title: "Portfolio Website",
-    desc: "This very website — built using React, Bootstrap, and Vite.",
-    link: "https://github.com/yourusername/portfolio",
+    desc: "A personal portfolio website built using HTML, CSS, and React to showcase my skills, projects, and contact details. It features a clean, responsive design with smooth navigation and interactive sections for a professional presentation.",
+    link: "https://github.com/Mamatha1629/portifolio",
   },
 ];
 
