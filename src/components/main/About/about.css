@@ -1,0 +1,37 @@
+.about-section {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* When dark mode is active */
+  .dark-mode .about-section {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+  }
+  
+  /* Ensure headings look bright in dark mode */
+  .dark-mode .about-section h2 {
+    color: #0d6efd;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d6efd;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-section:hover {
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+    transform: scale(1.02);
+  }
+  

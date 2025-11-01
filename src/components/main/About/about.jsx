@@ -1,37 +1,37 @@
 import React from "react";
+import './about.css'
 import { Container, Row, Col, Card } from "react-bootstrap";
-
+import profile from "../../../assets/profile/profile.jpg"; 
 function About() {
   return (
-    <section id="about" className="py-5 bg-light">
-      <Container>
-        <h2 className="text-center mb-4 fw-bold">About Me</h2>
-        <Row className="align-items-center">
-          <Col md={6}>
-            <Card className="border-0 shadow">
-              <Card.Body>
-                <Card.Text>
-                  I'm Mamatha, a detail-oriented web developer passionate about creating modern, user-friendly interfaces.
-                </Card.Text>
-                <Card.Text>
-                  Currently pursuing B.Tech in Computer Science and Engineering at PACE Institute of Technology and Sciences.
-                </Card.Text>
-                <Card.Text>
-                  I’ve worked with technologies like React, JavaScript, HTML, CSS, and MySQL. My goal is to grow as a front-end developer and create stunning user experiences.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} className="text-center mt-4 mt-md-0">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-              alt="Mamatha"
-              className="img-fluid rounded-circle shadow"
-              width="250"
-            />
-          </Col>
-        </Row>
-      </Container>
+    <section id="about" className="about-section container py-5">
+      <div className="row align-items-center">
+        {/* Left Side - Profile Photo */}
+        <div className="col-md-5 text-center mb-4 mb-md-0">
+          <img
+            src={profile}
+            alt="Mamatha Profile"
+            className="profile-img"
+          />
+        </div>
+
+        {/* Right Side - About Content */}
+        <div className="col-md-7">
+          <h2 className="mb-3 text-primary">About Me</h2>
+          <p className="lead">
+            Hi, I'm <strong>Mamatha</strong> — a passionate Frontend Developer who
+            loves building beautiful, responsive, and interactive websites.
+          </p>
+          <p>
+            I enjoy working with technologies like <strong>HTML, CSS, JavaScript, React</strong>,
+            and continuously learning new tools to improve my craft.
+          </p>
+          <p>
+            My goal is to create user-focused designs that not only look great but
+            also perform seamlessly across all devices.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

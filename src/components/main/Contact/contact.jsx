@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Alert } from "react-bootstrap";
-
+import './contact.css'
 function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);

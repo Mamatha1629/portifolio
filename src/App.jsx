@@ -1,10 +1,11 @@
 import React, { useState,useRef } from "react";
 import Navbar from "./components/NavBar/navBar";
- import Home from "./components/main/Home/home";
- import About from "./components/main/About/about";
- import Projects from "./components/main/Projects/project";
+import Home from "./components/main/Home/home";
+import About from "./components/main/About/about";
+import Projects from "./components/main/Projects/project";
 import Contact from "./components/main/Contact/contact";
- import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer/footer";
+import './App.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

@@ -1,0 +1,5 @@
+.projects-section:hover {
+    box-shadow: 0 0 25px rgba(13, 110, 253, 0.5);
+    transform: scale(1.03);
+  }
+  
