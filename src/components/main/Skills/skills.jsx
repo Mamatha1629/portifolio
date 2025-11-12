@@ -17,7 +17,7 @@ function Skills() {
   return (
     <section id="skills" className="skills-section py-5">
       <Container>
-        <h2 className="section-title text-gradient mb-5 text-center">Skills</h2>
+        <h2 className="section-title fw-bold text-gradient mb-5 text-center">Skills</h2>
         <Row className="justify-content-center">
           {skills.map((skill, index) => (
             <Col key={index} xs={6} sm={4} md={3} className="text-center mb-4">

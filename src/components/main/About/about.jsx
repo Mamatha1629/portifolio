@@ -21,7 +21,8 @@ function About() {
 
           {/* Right Side - About Content */}
           <Col md={7}>
-            <h2 className="section-title text-gradient mb-3">About Me</h2>
+          
+            <h2 className="section-title fw-bold text-gradient mb-4">About Me</h2>
             <p className="intro-text">
               Hi, I'm <strong>Mamatha</strong> — a passionate{" "}
               <strong>Frontend Developer</strong> with a love for crafting clean,
