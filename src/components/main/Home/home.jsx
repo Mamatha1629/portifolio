@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import { Container } from "react-bootstrap";
+import "./Home.css";
 
 function Home({ onViewWork }) {
   const [text, setText] = useState("");
@@ -17,18 +17,14 @@ function Home({ onViewWork }) {
   }, []);
 
   return (
-    <section
-      id="home"
-      className="py-5 text-center d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
-    >
-      <Container>
-        <h1 className="fw-bold display-4">Hi, I'm Mamatha 👋</h1>
-        <h3 className="text-info mt-3">{text}</h3>
-        <p className="mt-3 lead">
-          I’m passionate about building interactive, responsive websites using React, HTML, CSS, and JavaScript.
+    <section id="home" className="home-section d-flex align-items-center justify-content-center">
+      <Container className="text-center">
+        <h1 className="fw-bold display-4 title-text">Hi, I'm Mamatha 👋</h1>
+        <h3 className="typing-text mt-3">{text}</h3>
+        <p className="mt-3 lead home-description">
+          I’m passionate about building interactive, responsive websites using <span>React</span>, <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>.
         </p>
-        <button className="btn btn-primary mt-3" onClick={onViewWork}>
+        <button className="btn btn-primary mt-4 home-btn" onClick={onViewWork}>
           View My Work
         </button>
       </Container>

@@ -8,8 +8,10 @@ function Skills() {
     { name: "CSS3", color: "#264de4", level: "Advanced" },
     { name: "JavaScript", color: "#f0db4f", level: "Intermediate" },
     { name: "React", color: "#61dbfb", level: "Intermediate" },
-    { name: "Java", color: "#f89820", level: "Intermediate" },
-    { name: "MySQL", color: "#00758f", level: "Intermediate" },
+    { name: "MongoDB", color: "#f89820", level: "Intermediate" },
+    { name: "Node JS", color: "#00758f", level: "Intermediate" },
+    { name: "Express JS", color: "#00750f", level: "Intermediate" },
+    { name: "Redux", color: "#e9fc4f", level: "Intermediate" },
   ];
 
   return (
