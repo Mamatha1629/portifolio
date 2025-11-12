@@ -1,5 +1,58 @@
-.contact-section:hover {
-    box-shadow: 0 0 25px rgba(40, 167, 69, 0.5);
-    transform: scale(1.02);
-  }
-  
+/* Default Light Mode */
+.contact-section.light {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 Dark Mode */
+.contact-section.dark {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+/* Inputs */
+form input,
+form textarea {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-section.dark form input,
+.contact-section.dark form textarea {
+  background-color: #3a3a3a;
+  border-color: #555;
+  color: #fff;
+}
+
+.contact-section.dark form input::placeholder,
+.contact-section.dark form textarea::placeholder {
+  color: #bbb;
+}
+
+/* Labels */
+form label {
+  font-weight: 500;
+}
+
+/* Button */
+button {
+  background-color: #0d6efd;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Success alert */
+.alert-success {
+  background-color: #198754;
+  color: white;
+  border: none;
+}

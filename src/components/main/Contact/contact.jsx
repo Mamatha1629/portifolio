@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Alert } from "react-bootstrap";
-import './contact.css'
-function Contact() {
+import "./contact.css";
+
+function Contact({ darkMode }) {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
@@ -18,7 +19,10 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-5 bg-light">
+    <section
+      id="contact"
+      className={`contact-section py-5 ${darkMode ? "dark" : "light"}`}
+    >
       <Container>
         <h2 className="text-center mb-4 fw-bold">Contact Me</h2>
         <Form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: "600px" }}>
